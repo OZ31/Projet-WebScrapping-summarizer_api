@@ -35,3 +35,7 @@ Si tout fonctionne bien, l'api enverra une réponse de ce type :
     - titre de l'article.
     - résumé généré par l'IA.
     - Url de l'article.
+
+# Pour le déploiement sur docker
+docker build -t article-summarizer .
+docker run -d -p 8000:8000 --name article-summarizer-container article-summarizer
